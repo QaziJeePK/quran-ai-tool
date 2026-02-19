@@ -215,6 +215,34 @@ export function App() {
 
       {/* ══ HEADER ══════════════════════════════════════════════════════════════ */}
       <header className="bg-gradient-to-r from-emerald-900 via-emerald-800 to-teal-700 text-white">
+        {/* Developer prayer bar */}
+        <div className="bg-emerald-950/60 border-b border-emerald-700/50 px-4 py-2">
+          <div className="max-w-3xl mx-auto flex flex-wrap items-center justify-between gap-2 text-xs">
+            <p className="text-amber-300 font-medium flex items-center gap-1.5">
+              <span>🤲</span>
+              <span>Please pray for the developer <strong className="text-amber-200">SM Talha</strong> — may Allah accept this holy project</span>
+            </p>
+            <div className="flex items-center gap-3 text-emerald-400">
+              <a
+                href="https://darsenizami.net"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition-colors underline underline-offset-2 font-semibold"
+                title="Dars e Nizami - Islamic Education by SM Talha"
+              >
+                🌐 darsenizami.net
+              </a>
+              <a
+                href="mailto:smtalhadv@gmail.com"
+                className="hover:text-white transition-colors"
+                title="Email: smtalhadv@gmail.com"
+              >
+                ✉️ smtalhadv@gmail.com
+              </a>
+            </div>
+          </div>
+        </div>
+
         <div className="max-w-3xl mx-auto px-4 py-5">
           <div className="flex items-center gap-3">
             <span className="text-4xl">🕌</span>
@@ -646,18 +674,137 @@ export function App() {
       </main>
 
       {/* ══ FOOTER ══════════════════════════════════════════════════════════════ */}
-      <footer className="bg-emerald-900 text-white mt-10 py-8 text-center px-4">
-        <p className="text-3xl mb-1" style={{ fontFamily: "'Amiri Quran','Amiri',serif" }}>
-          وَرَتِّلِ الْقُرْآنَ تَرْتِيلًا
-        </p>
-        <p className="text-emerald-300 text-sm">
-          "And recite the Quran with measured recitation." — Al-Muzzammil 73:4
-        </p>
-        <div className="mt-4 flex flex-wrap justify-center gap-4 text-xs text-emerald-500">
-          <span>📖 114 Surahs</span>
-          <span>📚 20 Tajweed Rules</span>
-          <span>🎧 12 Famous Reciters</span>
-          <span>📊 Live Analytics</span>
+      <footer className="bg-emerald-900 text-white mt-10 px-4">
+
+        {/* Quranic verse */}
+        <div className="max-w-3xl mx-auto pt-8 pb-4 text-center border-b border-emerald-700/50">
+          <p className="text-3xl mb-1" style={{ fontFamily: "'Amiri Quran','Amiri',serif" }}>
+            وَرَتِّلِ الْقُرْآنَ تَرْتِيلًا
+          </p>
+          <p className="text-emerald-300 text-sm">
+            "And recite the Quran with measured recitation." — Al-Muzzammil 73:4
+          </p>
+          <div className="mt-3 flex flex-wrap justify-center gap-4 text-xs text-emerald-500">
+            <span>📖 114 Surahs</span>
+            <span>📚 20 Tajweed Rules</span>
+            <span>🎧 12 Famous Reciters</span>
+            <span>📊 Live Analytics</span>
+          </div>
+        </div>
+
+        {/* Developer section */}
+        <div className="max-w-3xl mx-auto py-6 border-b border-emerald-700/50">
+          <div className="bg-emerald-800/50 rounded-2xl p-5 border border-emerald-700/50">
+            {/* Prayer request */}
+            <div className="text-center mb-4">
+              <div className="text-3xl mb-2">🤲</div>
+              <p className="text-amber-300 font-bold text-base">
+                Please Pray for the Developer — SM Talha
+              </p>
+              <p className="text-emerald-300 text-sm mt-1 max-w-xl mx-auto leading-relaxed">
+                This tool was built as a <em>holy project</em> to help Muslims perfect their Quranic recitation.
+                May Allah accept this work, forgive the developer's sins, and make it a source of
+                <strong className="text-amber-200"> Sadaqah Jariyah</strong> (continuous reward). آمين
+              </p>
+              <p className="text-emerald-400 text-xs mt-2" style={{ fontFamily: "'Amiri',serif" }}>
+                اللهم اجعل هذا العمل في ميزان حسنات من صنعه وانفع به المسلمين
+              </p>
+            </div>
+
+            {/* Developer info grid */}
+            <div className="grid sm:grid-cols-3 gap-3 text-center text-sm">
+              <div className="bg-emerald-900/50 rounded-xl p-3 border border-emerald-700/30">
+                <div className="text-lg mb-1">👨‍💻</div>
+                <p className="text-emerald-400 text-xs font-semibold uppercase tracking-wide mb-1">Developer</p>
+                <p className="text-white font-bold">Syed Muhammad Talha</p>
+                <p className="text-emerald-400 text-xs mt-0.5">SM Talha</p>
+              </div>
+
+              <div className="bg-emerald-900/50 rounded-xl p-3 border border-emerald-700/30">
+                <div className="text-lg mb-1">📞</div>
+                <p className="text-emerald-400 text-xs font-semibold uppercase tracking-wide mb-1">Contact</p>
+                <a
+                  href="tel:+923132020392"
+                  className="text-white font-bold hover:text-amber-300 transition-colors block"
+                  title="Call SM Talha"
+                >
+                  +92 313 2020392
+                </a>
+                <a
+                  href="mailto:smtalhadv@gmail.com"
+                  className="text-emerald-400 text-xs hover:text-white transition-colors mt-0.5 block"
+                  title="Email SM Talha"
+                >
+                  smtalhadv@gmail.com
+                </a>
+              </div>
+
+              <div className="bg-emerald-900/50 rounded-xl p-3 border border-emerald-700/30">
+                <div className="text-lg mb-1">🌐</div>
+                <p className="text-emerald-400 text-xs font-semibold uppercase tracking-wide mb-1">Website</p>
+                <a
+                  href="https://darsenizami.net"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-amber-300 font-bold hover:text-white transition-colors block underline underline-offset-2"
+                  title="Dars e Nizami — Islamic Education by SM Talha"
+                >
+                  darsenizami.net
+                </a>
+                <p className="text-emerald-400 text-xs mt-0.5">Dars e Nizami Islamic</p>
+              </div>
+            </div>
+
+            {/* Contribute CTA */}
+            <div className="mt-4 text-center">
+              <p className="text-emerald-300 text-xs mb-2">
+                💡 Want to contribute to this holy project or suggest improvements?
+              </p>
+              <div className="flex flex-wrap items-center justify-center gap-2">
+                <a
+                  href="mailto:smtalhadv@gmail.com?subject=Quran Checker — Contribution"
+                  className="px-4 py-2 bg-amber-500 hover:bg-amber-400 text-emerald-900 rounded-full text-xs font-bold transition-all hover:scale-105 shadow-lg"
+                >
+                  ✉️ Contribute to Holy Project
+                </a>
+                <a
+                  href="https://darsenizami.net"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white rounded-full text-xs font-bold transition-all hover:scale-105 border border-emerald-500"
+                >
+                  🌐 Visit darsenizami.net
+                </a>
+                <a
+                  href="tel:+923132020392"
+                  className="px-4 py-2 bg-transparent border border-emerald-500 hover:bg-emerald-700 text-white rounded-full text-xs font-bold transition-all"
+                >
+                  📞 Call SM Talha
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Copyright bar */}
+        <div className="max-w-3xl mx-auto py-4 text-center">
+          <p className="text-emerald-500 text-xs leading-relaxed">
+            © {new Date().getFullYear()} <strong className="text-emerald-300">Syed Muhammad Talha (SM Talha)</strong> — All rights reserved.
+            Built with ❤️ for the Ummah. |{' '}
+            <a
+              href="https://darsenizami.net"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-amber-400 hover:text-amber-200 transition-colors underline underline-offset-2 font-semibold"
+            >
+              darsenizami.net
+            </a>
+            {' '}| <a href="mailto:smtalhadv@gmail.com" className="text-emerald-400 hover:text-white transition-colors">smtalhadv@gmail.com</a>
+            {' '}| <a href="tel:+923132020392" className="text-emerald-400 hover:text-white transition-colors">+92 313 2020392</a>
+          </p>
+          <p className="text-emerald-700 text-xs mt-1">
+            Quran Recitation Checker · AI Tajweed Detector · 114 Surahs · 12 Famous Reciters · Voice Comparison
+          </p>
         </div>
       </footer>
 
